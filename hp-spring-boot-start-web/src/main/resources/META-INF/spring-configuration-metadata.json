@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "spring.okhttp",
+      "type": "hp.boot.web.config.annotation.OkHttpProperties",
+      "sourceType": "hp.boot.web.config.annotation.OkHttpProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.okhttp.connect-time-out",
+      "type": "java.lang.Integer",
+      "description": "连接超时时间（单位：毫秒）",
+      "sourceType": "hp.boot.web.config.annotation.OkHttpProperties"
+    },
+    {
+      "name": "spring.okhttp.read-time-out",
+      "type": "java.lang.Integer",
+      "description": "读取超时时间（单位：毫秒）",
+      "sourceType": "hp.boot.web.config.annotation.OkHttpProperties"
+    },
+    {
+      "name": "spring.okhttp.write-time-out",
+      "type": "java.lang.Integer",
+      "description": "写入超时时间（单位：毫秒）",
+      "sourceType": "hp.boot.web.config.annotation.OkHttpProperties"
+    }
+  ],
+  "hints": []
+}

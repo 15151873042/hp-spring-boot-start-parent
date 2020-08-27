@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "spring.tx",
+      "type": "hp.boot.transaction.config.annotation.TxProperties",
+      "sourceType": "hp.boot.transaction.config.annotation.TxProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.tx.point-cut-expression",
+      "type": "java.lang.String",
+      "description": "切点表达式",
+      "sourceType": "hp.boot.transaction.config.annotation.TxProperties"
+    },
+    {
+      "name": "spring.tx.read-only-transaction-method-pattern",
+      "type": "java.lang.String[]",
+      "description": "只读事务方法名称正则",
+      "sourceType": "hp.boot.transaction.config.annotation.TxProperties"
+    },
+    {
+      "name": "spring.tx.read-write-transaction-method-pattern",
+      "type": "java.lang.String[]",
+      "description": "读写事务方法名称正则",
+      "sourceType": "hp.boot.transaction.config.annotation.TxProperties"
+    }
+  ],
+  "hints": []
+}
