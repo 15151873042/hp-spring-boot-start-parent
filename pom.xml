@@ -60,5 +60,6 @@
     	<module>hp-common</module>
     	<module>hp-spring-boot-start-web</module>
     	<module>hp-mybatis-spring-boot-starter</module>
+    	<module>hp-spring-boot-start-redis</module>
     </modules>
 </project>
