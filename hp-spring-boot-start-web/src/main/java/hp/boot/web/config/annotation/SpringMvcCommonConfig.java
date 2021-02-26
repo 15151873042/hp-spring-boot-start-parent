@@ -39,7 +39,7 @@ public class SpringMvcCommonConfig implements WebMvcConfigurer {
 	// 添加消息转换器
 	@Override
 	public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
-		MappingJackson2HttpMessageConverter jacksonConverter = mappingJackson2HttpMessageConverter();
+		MappingJackson2HttpMessageConverter	 jacksonConverter = mappingJackson2HttpMessageConverter();
 		// 这边要将自定义的jsonConver放在第一个，这样处理数据的时候就会先用自定义的
 		converters.add(0, jacksonConverter);
 	}

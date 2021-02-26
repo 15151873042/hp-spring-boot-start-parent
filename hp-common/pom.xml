@@ -7,9 +7,28 @@
 	<parent>
 		<groupId>com.hp</groupId>
 		<artifactId>hp-spring-boot-start-parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 	<modules>
 		<module>hp-common-core</module>
 	</modules>
+
+	<properties>
+		<poi.version>4.1.2</poi.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.hp.common</groupId>
+				<artifactId>hp-common-core</artifactId>
+				<version>1.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-ooxml</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>

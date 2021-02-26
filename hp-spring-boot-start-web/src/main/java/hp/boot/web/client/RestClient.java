@@ -23,12 +23,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriUtils;
 
-import com.got.common.core.util.BeanMapUtil;
-import com.got.common.core.util.DateUtil;
-import com.got.common.core.util.HmacUtil;
-import com.got.common.core.util.JacksonUtil;
-import com.got.common.core.util.StringUtil;
-import com.got.common.core.vo.JsonResult;
+import com.hp.common.core.util.BeanMapUtil;
+import com.hp.common.core.util.DateUtil;
+import com.hp.common.core.util.HmacUtil;
+import com.hp.common.core.util.JacksonUtil;
+import com.hp.common.core.util.StringUtil;
+import com.hp.common.core.vo.JsonResult;
 
 public class RestClient {
 
@@ -196,7 +196,7 @@ public class RestClient {
      * url参数拼接，用于GET、DELETE
      * 
      * @param url
-     * @param paramObj
+     * @param paramMap
      * @return
      * @throws UnsupportedEncodingException 
      */
@@ -255,7 +255,7 @@ public class RestClient {
      * url占位符变量替换
      * 
      * @param url
-     * @param argMap
+     * @param paramMap
      * @return
      */
     private static String urlPlaceholderReplace(String url, Map<String, Object> paramMap) {
